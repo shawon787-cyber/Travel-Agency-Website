@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
     <style type="text/tailwindcss">
       @theme {
@@ -56,7 +57,7 @@
                 <p class="text-gray-600 font-medium">Explore beautiful places in the world with Acenda</p>
             </div>
             <!-- location div -->
-            <div class="grid grid-cols-2 gap-5 md:flex items-center md:justify-between md:border md:border-gray-300 md:rounded-full p-5">
+            <div class="grid grid-cols-2 gap-5 lg:flex items-center lg:justify-between lg:border md:border-gray-300 md:rounded-full lg:p-5">
                 <div class="flex items-center gap-2">
                     <i class="fa-solid fa-location-crosshairs text-4xl text-gray-300"></i>
                     <div class="flex flex-col">
@@ -97,7 +98,7 @@
         <!-- card section -->
          <section class="my-12">
             <h2 class="text-center text-3xl font-bold">WHY CHOOSE US?</h2>
-         <div class="grid lg:grid-cols-4 gap-6 my-6 mx-3 md:container md:mx-auto">
+         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 my-6 mx-3 md:container md:mx-auto">
             <!-- card-01 -->
             <div class="flex flex-col items-center text-center px-6 pt-10 pb-6  bg-white rounded-xl border border-sky-200">
                 <img src="./assets/dollar-circle.png" alt="">
@@ -121,8 +122,8 @@
                     <h4 class="font-bold  mb-1 text-[#222]">Competitive Prices</h4>
                     <p class="text-sm text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                 </div>
-            </div>
-            <!-- card-04 -->
+        </div>
+         <!-- card-04 -->
             <div class="flex flex-col items-center text-center px-6 pt-10 pb-6  bg-white rounded-xl border border-sky-200">
                 <img src="./assets/dollar-circle.png" alt="">
                 <div class="mt-3">
@@ -130,12 +131,11 @@
                     <p class="text-sm text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                 </div>
             </div>
-        </div>
          </section>
          <!-- <h2 class="text-center text-3xl font-bold">WHY CHOOSE US?</h2> -->
           <section class="mb-10 container mx-auto justify-center mt-10 md:mt-16">
             <h2 class="text-center text-3xl font-bold text-[#0182b0]">OUR PARTNERS</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-8 justify-items-center">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-6 justify-items-center">
                 <div class="flex items-center gap-3">
                     <img class="w-10" src="./assets/Group (1).png" alt="">
                     <p class="text-xl text-gray-800 font-medium">Homely</p>
@@ -163,13 +163,12 @@
             </div>
           </section>
           <!-- top book now -->
-        <section class="mb-16 max-w-[1140px] mx-auto mt-10 md:mt-16">
-            <h2 class="text-center text-3xl font-bold">TOP BOOK NOW</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 place-items-center mr-8 md:mr-0 mt-6">
-                <!-- Image one -->
-                <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/Rectangle.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+        <section class="container mx-auto mb-10 md:mb-20">
+            <h2 class="text-center text-3xl font-bold mb-6">TOP BOOK NOW</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 px-3">
+                <div>
+                     <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/Rectangle.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -187,8 +186,11 @@
                     </div>
                 </div>
             </div>
-                <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/one.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/one.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -196,7 +198,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -204,8 +208,10 @@
                     </div>
                 </div>
             </div>
-                <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/two.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/two.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -213,7 +219,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -221,8 +229,10 @@
                     </div>
                 </div>
             </div>
-             <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/three.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/three.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -230,7 +240,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -238,8 +250,10 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/4.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/4.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -247,7 +261,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -255,8 +271,10 @@
                     </div>
                 </div>
             </div>
-             <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/5.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/5.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -264,7 +282,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -272,8 +292,10 @@
                     </div>
                 </div>
             </div>
-             <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/6.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/6.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -281,7 +303,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -289,8 +313,10 @@
                     </div>
                 </div>
             </div>
-             <div class="flex flex-col gap-2 w-36 md:w-64">
-                <div class="bg-[url('./assets/7.png')] h-48 w-48 md:h-64 md:w-64 bg-cover">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-2">
+                <div class="bg-[url('./assets/7.png')] h-48 rounded-xl md:h-64 bg-cover">
                     <div class="flex justify-end p-3">
                         <p><span class="text-orange-400">&#9733;</span> <span class="font-semibold">4.5</span></p>
                     </div>
@@ -298,7 +324,9 @@
                 <div>
                     <div class="flex items-center justify-between">
                         <h4 class="text-md font-bold">The Oasis</h4>
-                        <p class="text-md font-bold">$ 1000.00</p>
+                        <div>
+                            <p class="text-md font-bold">$ 1000.00</p>
+                        </div>
                     </div>
                     <div class="flex items-center gap-2 mt-1">
                         <img class="w-5" src="./assets/location.png" alt="">
@@ -306,9 +334,103 @@
                     </div>
                 </div>
             </div>
-                
+                </div>
+            </div>
+           <div class="flex justify-center">
+                 <button class="bg-sky-400 py-3 px-10 rounded-sm text-white text-xl mt-8 cursor-pointer">See All</button>
+           </div>
+       </section>
+       <section class="relative bg-[url('./assets/image13.png')] rounded-xl py-16 lg:h-[500px] bg-cover mb-10">
+             <div class="absolute inset-0 bg-black/50"></div>
+             <div class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-[1140px] mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold">EXPLORE MALDIVES</h2>
+                <div class="grid md:grid-cols-2 border-t mt-8 pt-8">
+                    <div>
+                        <p class="md:w-120 text-center md:text-start px-2 md:px-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <button class="bg-sky-400 py-3 px-10 rounded-sm text-white text-xl mt-8 cursor-pointer mb-8 hidden md:block">See All</button>
+                    </div>
+                    <!-- flex items-center justify-center gap-5 mt-6 md:mt-0 -->
+                    <div class="grid grid-cols-3 gap-4 px-3 mt-5 lg:mt-0 place-items-center">
+                        <img class="w-full" src="./assets/Rectangle53.png" alt="">
+                        <img class="w-full" src="./assets/Rectangle54(1).png" alt="">
+                        <img class="w-full" src="./assets/Rectangle54.png" alt="">
+                    </div>
+                </div>
             </div>
        </section>
+       <!-- Feature News -->
+        <section class="container mx-auto mb-10 md:mb-20 px-3">
+            <h2 class="text-3xl mb-5 font-bold">Feature News</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-[#fff] shadow-md flex flex-col rounded-xl gap-4 pb-5">
+                    <!-- one -->
+                    <div>
+                        <img class="w-full h-64 rounded-t-xl" src="./assets/Rectangle733.png" alt="">
+                    </div>
+                    <!-- two -->
+                    <div class="px-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-days text-xs text-gray-600"></i>
+                            <div>
+                                <p class="text-gray-700 text-xs font-semibold">January 20, 2026</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-2">Delicious restaurant at Hanalei Bay</h3>
+                        <p class="text-md font-medium text-gray-700">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...</p>
+                        <div class="flex gap-2 mt-3">
+                            <img class="w-6" src="./assets/icons8-arrow-50.png" alt="">
+                        <button class="text-sky-500 cursor-pointer"> See All</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-[#fff] shadow-md flex flex-col rounded-xl gap-4 pb-5">
+                    <!-- one -->
+                    <div>
+                        <img class="w-full h-64 rounded-t-xl" src="./assets/Rectangle-33-(1).png" alt="">
+                    </div>
+                    <!-- two -->
+                    <div class="px-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-days text-xs text-gray-600"></i>
+                            <div>
+                                <p class="text-gray-700 text-xs font-semibold">January 20, 2026</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-2">Top 10 most beautiful check-in spots in Ph ...</h3>
+                        <p class="text-md font-medium text-gray-700">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...</p>
+                        <div class="flex gap-2 mt-3">
+                            <img class="w-6" src="./assets/icons8-arrow-50.png" alt="">
+                        <button class="text-sky-500 cursor-pointer"> See All</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-[#fff] shadow-md flex flex-col rounded-xl gap-4 pb-5">
+                    <!-- one -->
+                    <div>
+                        <img class="w-full h-64 rounded-t-xl" src="./assets/Rectangle-33.png" alt="">
+                    </div>
+                    <!-- two -->
+                    <div class="px-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-days text-xs text-gray-600"></i>
+                            <div>
+                                <p class="text-gray-700 text-xs font-semibold">January 20, 2026</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-2">Top 5 newest services at Navagio Beach</h3>
+                        <p class="text-md font-medium text-gray-700">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been lorem ...</p>
+                        <div class="flex gap-2 mt-3">
+                            <img class="w-6" src="./assets/icons8-arrow-50.png" alt="">
+                        <button class="text-sky-500 cursor-pointer"> See All</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <footer>
 
